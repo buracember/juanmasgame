@@ -7,6 +7,9 @@ const fallback = <div className="c-loader" />;
 export const Login: LoadableComponent<any> = loadable(() => import('@containers/auth/login'), { fallback });
 
 // prettier-ignore
+export const Game: LoadableComponent<any> = loadable(() => import('@containers/juanmasgame'), { fallback });
+
+// prettier-ignore
 export const Signup: LoadableComponent<any> = loadable(() => import('@containers/auth/signup'), { fallback });
 
 // prettier-ignore
