@@ -1,15 +1,30 @@
-div.selected{
-    background-color: burlywood!important;
-}
-div.operand{
-    background-color: moccasin;
-    height: 75px;
-    width: 75px;
-    vertical-align: middle;
-    text-align: center;
-    display: table-cell;
-    cursor: pointer;
-}
-input.colorinput {
-    width: 4rem;
-}
+.content { background-color: #9ecdf3; width: 100%; max-width: 800px; margin: 0 auto; padding-bottom: 30px;}
+
+.title{ max-width:fit-content; margin:0 auto}
+.title-row { display: inline-block; margin-top: 50px;}
+.title-row input {width: 6rem; height: 30px; vertical-align: middle;}
+.title-row span {font-size: xx-large; margin-left: 20px; vertical-align: middle;}
+
+.operands { width: fit-content; display: block; margin: 0 auto; padding: 0; margin-top: 30px;}
+.operands li { display: inline-block; margin-right: 35px;}
+.operands li:last-child { margin-right: 0px;}
+.operands li span { display:table-cell; border-radius: 100%; background-color: moccasin; height: 70px; width: 70px;vertical-align: middle;text-align: center; cursor: pointer;}
+
+.display { width: fit-content; margin: 0 auto; margin-top:20px;}
+.display * {display: inline-block; vertical-align: middle;}
+.addoperation * {display: block; width: 110px; height: 35px;}
+.addoperation button { margin-top: 10px;}
+.displaynumber { width: 250px; text-align: center; font-size: xx-large;}
+
+.operations { width: fit-content; display: block; margin: 0 auto; padding: 0; margin-top: 30px;}
+.operation { background-color: pink; width: 150px; height: 80px; position: relative; border-radius: 5%; border-color: saddlebrown; border-width: 1px; border-style: solid; display: inline-block; margin: 10px;}
+.operation * {position: absolute; }
+.operation span {font-size: xx-large; margin: 10px 20px 10px 20px;}
+.operation button {border-style: none; background-color: inherit; margin: 5px;}
+
+.top { top: 0px; }
+.bottom { bottom: 0px; }
+.left { left: 0px; }
+.right { right: 0px; }
+
+button { cursor: pointer; }
