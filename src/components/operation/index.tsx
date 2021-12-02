@@ -13,13 +13,11 @@ interface OperationProps {
     onDelete: () => void,
 }
 
-export const Operation: React.FunctionComponent<OperationProps> = ({ label, value, onApply, onDelete }) => {
-	return (
-        <figure className="operation">
-            <span className="top left">{label}</span>
-            <span className="top right">{value}</span>
-            <button className="bottom left" onClick={onApply}>APPLY</button>
-            <button className="bottom right" onClick={onDelete}>DELETE</button>
-        </figure>  
-	);
-}
+export const Operation: React.FunctionComponent<OperationProps> = ({ label, value, onApply, onDelete }: OperationProps) => (
+    <figure className="operation">
+        <span className="top left">{label}</span>
+        <span className="top right">{value}</span>
+        <button className="bottom left" onClick={onApply}>APPLY</button>
+        <button className="bottom right" onClick={onDelete}>DELETE</button>
+    </figure>
+);

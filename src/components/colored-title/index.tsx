@@ -5,8 +5,6 @@ interface TitleProps {
 	readonly color: string;
 }
 
-export const Title: React.FunctionComponent <TitleProps> = ({text, color}) => {
-	return (
-		<span style={{color}}>{text}</span>
-	)
-}
+export const Title: React.FunctionComponent <TitleProps> = ({text, color}: TitleProps) => (
+	<span style={{color}}>{text}</span>
+);

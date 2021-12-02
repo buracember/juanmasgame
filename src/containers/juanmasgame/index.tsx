@@ -6,50 +6,46 @@ import { Display } from '@src/components/display';
 import { Operation } from '@src/components/operation';
 import { Operations } from '@src/components/operations';
 
-export const Game: React.FunctionComponent = (props) => {
-	const [inputValue, setInputValue] =  React.useState(0);
+const initialOperandsState = [
+	{
+		label: "x",
+		apply: (a:number , b:number ) => a*b,
+		selected: true,
+	},
+	{
+		label: "%",
+		apply: (a:number , b:number ) => a/b
+	},
+	{
+		label: "-",
+		apply: (a:number , b:number ) => a-b
+	},
+	{
+		label: "+",
+		apply: (a:number , b:number ) => a+b
+	},
+];
+
+export const Game: React.FunctionComponent = () => {
 	const [ans, setAns] =  React.useState(0);
 	const [operations, setOperations] = React.useState([] as Operation []);
-	const [operands, setOperands] = React.useState([
-		{
-			label: "x",
-			apply: (a:number , b:number ) => a*b,
-			selected: true,
-		},
-		{
-			label: "%",
-			apply: (a:number , b:number ) => a/b
-		},
-		{
-			label: "-",
-			apply: (a:number , b:number ) => a-b
-		},
-		{
-			label: "+",
-			apply: (a:number , b:number ) => a+b
-		},
-	]);
+	const [operands, setOperands] = React.useState(initialOperandsState);
 	return (
 		<div className="content">
 			<ColorizableTitle/>
 			<OperandSelector operands={operands} setOperands={setOperands} />
 			<Display 
 				ans={ans}
-				inputValue={inputValue}
-				setInputValue={setInputValue}
 				addOperation={
-					() =>{
+					(inputValue) =>{
 						const selectedOperand = operands.find(x=>x.selected);
+						if (!selectedOperand) {
+							return;
+						}
 						setOperations(operations.concat([{
 							value: inputValue,
-							label: selectedOperand!.label,
-							apply: selectedOperand!.apply,
-						}]))
-
-						console.log("added operation", operations.concat([{
-							value: inputValue,
-							label: selectedOperand!.label,
-							apply: selectedOperand!.apply,
+							label: selectedOperand.label,
+							apply: selectedOperand.apply,
 						}]))
 					}
 				}

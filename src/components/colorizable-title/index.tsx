@@ -2,7 +2,7 @@ import * as React from 'react'
 import { ColorPicker } from '../color-picker';
 import { Title } from '../colored-title';
 
-export const ColorizableTitle: React.FunctionComponent = (props) => {
+export const ColorizableTitle: React.FunctionComponent = () => {
 	const [color, setColor] = React.useState("#fafafa");
     return(
         <section className="title">

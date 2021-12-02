@@ -11,22 +11,20 @@ interface OperandSelectorProps {
 	readonly setOperands: (operands: Operand[]) => void,
 }
 
-export const OperandSelector: React.FunctionComponent<OperandSelectorProps> = ({ operands, setOperands }) => {
-	return (
-		<ul className="operands">
-			{operands.map((op, key) => (
-				<li
-					key={key}
-					className={op.selected ? "selected" : ""}
-					onClick={
-						() => {
-							setOperands(operands.map((op, opKey) => ({ ...op, selected: opKey === key })));
-						}
+export const OperandSelector: React.FunctionComponent<OperandSelectorProps> = ({ operands, setOperands }: OperandSelectorProps) => (
+	<ul className="operands">
+		{operands.map((op, key) => (
+			<li
+				key={key}
+				className={op.selected ? "selected" : ""}
+				onClick={
+					() => {
+						setOperands(operands.map((op, opKey) => ({ ...op, selected: opKey === key })));
 					}
-				>
-					<span>{op.label}</span>
-				</li>
-			))}
-		</ul>
-	);
-}
+				}
+			>
+				<span>{op.label}</span>
+			</li>
+		))}
+	</ul>
+);
