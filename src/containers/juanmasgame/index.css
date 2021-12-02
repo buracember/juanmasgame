@@ -8,7 +8,8 @@
 .operands { width: fit-content; display: block; margin: 0 auto; padding: 0; margin-top: 30px;}
 .operands li { display: inline-block; margin-right: 35px;}
 .operands li:last-child { margin-right: 0px;}
-.operands li span { display:table-cell; border-radius: 100%; background-color: moccasin; height: 70px; width: 70px;vertical-align: middle;text-align: center; cursor: pointer;}
+.operands li span { display:table-cell; border-radius: 100%; background-color: #ffe2b6; height: 70px; width: 70px;vertical-align: middle;text-align: center; cursor: pointer;}
+.operands li.selected span {background-color: #ffbe93;}
 
 .display { width: fit-content; margin: 0 auto; margin-top:20px;}
 .display * {display: inline-block; vertical-align: middle;}
