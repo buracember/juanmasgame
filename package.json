@@ -151,7 +151,8 @@
     "webpack-hot-middleware": "2.25.0",
     "webpack-pwa-manifest": "4.3.0",
     "workbox-cli": "^6.3.0",
-    "yargs": "17.0.1"
+    "yargs": "17.0.1",
+    "gh-pages": "^2.2.0"
   },
   "homepage": "https://buracember.github.io/buratest",
   "jest": {
@@ -229,7 +230,9 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "tsc": "tsc --noEmit --skipLibCheck",
-    "tsc:enums": "rm -rf ./dist && tsc --project tsconfig-enums.json --skipLibCheck"
+    "tsc:enums": "rm -rf ./dist && tsc --project tsconfig-enums.json --skipLibCheck",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "version": "1.6.3"
 }
