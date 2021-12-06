@@ -1,10 +1,10 @@
 {
-  "hash": "8f9f42d9758f37cf7faa",
+  "hash": "e151b05ae0902d1cd10c",
   "publicPath": "/",
   "outputPath": "/home/bura/bootcamp-react-bura/dist",
   "assetsByChunkName": {
     "main-31743c5a": [
-      "main-31743c5a.b7b3dadc5de39c196404.bundle.js"
+      "main-31743c5a.a2c43b91949fcf686aca.bundle.js"
     ],
     "runtime~main": [
       "runtime~main.7704ddb1a95952166318.bundle.js"
@@ -91,10 +91,10 @@
       "main-27545368.56b787de8cec3e604dd5.bundle.js"
     ],
     "main-d91a9049": [
-      "main-d91a9049.80fc898eee17221509f9.bundle.js"
+      "main-d91a9049.6d8adc9a1d85c2bef146.bundle.js"
     ],
     "main-234957ad": [
-      "main-234957ad.8f9f42d9758f37cf7faa.css"
+      "main-234957ad.e151b05ae0902d1cd10c.css"
     ]
   },
   "assets": [
@@ -227,13 +227,13 @@
           "name": "main-27545368.56b787de8cec3e604dd5.bundle.js"
         },
         {
-          "name": "main-d91a9049.80fc898eee17221509f9.bundle.js"
+          "name": "main-d91a9049.6d8adc9a1d85c2bef146.bundle.js"
         },
         {
-          "name": "main-234957ad.8f9f42d9758f37cf7faa.css"
+          "name": "main-234957ad.e151b05ae0902d1cd10c.css"
         },
         {
-          "name": "main-31743c5a.b7b3dadc5de39c196404.bundle.js"
+          "name": "main-31743c5a.a2c43b91949fcf686aca.bundle.js"
         }
       ],
       "filteredAssets": 0,
@@ -249,7 +249,7 @@
     {
       "id": 605,
       "files": [
-        "main-31743c5a.b7b3dadc5de39c196404.bundle.js"
+        "main-31743c5a.a2c43b91949fcf686aca.bundle.js"
       ]
     },
     {
@@ -423,13 +423,13 @@
     {
       "id": 376,
       "files": [
-        "main-d91a9049.80fc898eee17221509f9.bundle.js"
+        "main-d91a9049.6d8adc9a1d85c2bef146.bundle.js"
       ]
     },
     {
       "id": 892,
       "files": [
-        "main-234957ad.8f9f42d9758f37cf7faa.css"
+        "main-234957ad.e151b05ae0902d1cd10c.css"
       ]
     }
   ]
