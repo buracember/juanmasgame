@@ -232,7 +232,7 @@
     "tsc": "tsc --noEmit --skipLibCheck",
     "tsc:enums": "rm -rf ./dist && tsc --project tsconfig-enums.json --skipLibCheck",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "version": "1.6.3"
 }
