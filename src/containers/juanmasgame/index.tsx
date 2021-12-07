@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './index.css';
+import './index.scss';
 import { ColorizableTitle } from '@src/components/colorizable-title';
 import { OperandSelector } from '@src/components/operand-selector';
 import { Display } from '@src/components/display';
